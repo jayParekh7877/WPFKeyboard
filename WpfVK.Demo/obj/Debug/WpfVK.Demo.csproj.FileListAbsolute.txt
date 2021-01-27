@@ -1,0 +1,17 @@
+D:\Downloads\KeyBoard\WpfVK.Demo\bin\Debug\WpfVK.Demo.exe.config
+D:\Downloads\KeyBoard\WpfVK.Demo\bin\Debug\WpfVK.Demo.exe
+D:\Downloads\KeyBoard\WpfVK.Demo\bin\Debug\WpfVK.Demo.pdb
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo.csprojAssemblyReference.cache
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\MainWindow.g.cs
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\App.g.cs
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo_MarkupCompile.cache
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo_MarkupCompile.lref
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\MainWindow.baml
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo.g.resources
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo.Properties.Resources.resources
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo.csproj.GenerateResource.cache
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo.csproj.CoreCompileInputs.cache
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo.exe
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\WpfVK.Demo.pdb
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Downloads\KeyBoard\WpfVK.Demo\obj\Debug\Themes\Generic.baml

@@ -1,0 +1,78 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        xmlns:myControl="clr-namespace:WpfApp1.Control"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="myControl:MyCustomControl">
+            <Setter Property="BorderBrush" Value="White" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Background" Value="Black" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid Row="0">
+            <ItemsControl ItemsSource="{Binding LogicalKeysFirstRow}">
+                <ItemsControl.ItemTemplate>
+                    <ItemContainerTemplate>
+                        <myControl:MyCustomControl IsHotKey="{Binding IsHotKey}" KeyName="{Binding Name}"
+                                                   KeyCapitalName="{Binding CapitalName}" Click="{Binding DoSomethingCommand}" CommandParameter="{Binding .}"
+                                                   Height="{Binding Height}"
+                                                   Width="{Binding Width}" />
+                    </ItemContainerTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </Grid>
+        <Grid Row="1">
+            <ItemsControl ItemsSource="{Binding LogicalKeysSecondRow}">
+                <ItemsControl.ItemTemplate>
+                    <ItemContainerTemplate>
+                        <myControl:MyCustomControl KeyName="{Binding Name}"
+                                                   KeyCapitalName="{Binding CapitalName}" IsHotKey="{Binding IsHotKey}"
+                                                   Height="{Binding Height}"
+                                                   Width="{Binding Width}" />
+                    </ItemContainerTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </Grid>
+        <Grid Row="2">
+            <ItemsControl ItemsSource="{Binding LogicalKeysThirdRow}">
+                <ItemsControl.ItemTemplate>
+                    <ItemContainerTemplate>
+                        <myControl:MyCustomControl KeyName="{Binding Name}"
+                                                   KeyCapitalName="{Binding CapitalName}" IsHotKey="{Binding IsHotKey}"
+                                                   Height="{Binding Height}"
+                                                   Width="{Binding Width}" />
+                    </ItemContainerTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+            </ItemsControl>
+        </Grid>
+    </Grid>
+</Window>
