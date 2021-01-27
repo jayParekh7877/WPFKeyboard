@@ -78,5 +78,14 @@ namespace WpfApp1.Control
             get { return (string) GetValue(KeyCapitalNameProperty); }
             set { SetValue(KeyCapitalNameProperty, value); }
         }
+
+        public static readonly DependencyProperty ClickCommandProperty = DependencyProperty.Register(
+            "ClickCommand", typeof(ICommand), typeof(MyCustomControl), new PropertyMetadata(default(ICommand)));
+
+        public ICommand ClickCommand
+        {
+            get { return (ICommand) GetValue(ClickCommandProperty); }
+            set { SetValue(ClickCommandProperty, value); }
+        }
     }
 }

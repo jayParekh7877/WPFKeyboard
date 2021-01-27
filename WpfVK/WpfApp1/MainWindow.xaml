@@ -28,7 +28,7 @@
                 <ItemsControl.ItemTemplate>
                     <ItemContainerTemplate>
                         <myControl:MyCustomControl IsHotKey="{Binding IsHotKey}" KeyName="{Binding Name}"
-                                                   KeyCapitalName="{Binding CapitalName}" Click="{Binding DoSomethingCommand}" CommandParameter="{Binding .}"
+                                                   KeyCapitalName="{Binding CapitalName}" ClickCommand="{Binding DoSomeImportantMethod}"
                                                    Height="{Binding Height}"
                                                    Width="{Binding Width}" />
                     </ItemContainerTemplate>

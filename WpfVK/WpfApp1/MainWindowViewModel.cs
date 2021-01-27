@@ -8,7 +8,7 @@ using WpfApp1.Keys;
 
 namespace WpfApp1
 {
-    //https://stackoverflow.com/questions/7660547/how-to-create-bindable-commands-in-custom-control
+    
     public class MainWindowViewModel : INotifyPropertyChanged
     {
         public MainWindowViewModel()
@@ -73,11 +73,11 @@ namespace WpfApp1
             {
                 return _doSomething ?? (_doSomething = new RelayCommand(
                     p => true,
-                    DoSomeImportantMethod));
+                    p=>DoSomeImportantMethod()));
             }
         }
 
-        private void DoSomeImportantMethod(object obj)
+        private void DoSomeImportantMethod()
         {
             
         }
